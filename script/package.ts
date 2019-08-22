@@ -137,7 +137,7 @@ function packageLinux() {
     'build',
     '--prepackaged',
     distPath,
-    '--x64',
+    '--ia32',
     '--config',
     configPath,
   ]

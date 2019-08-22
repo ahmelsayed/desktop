@@ -135,10 +135,10 @@ function packageApp() {
 
   const toPackageArch = (targetArch: string | undefined): packager.arch => {
     if (targetArch === undefined) {
-      return 'x64'
+      return 'ia32'
     }
 
-    if (targetArch === 'arm64' || targetArch === 'x64') {
+    if (targetArch === 'arm64' || targetArch === 'x64' || targetArch == 'ia32') {
       return targetArch
     }
 
